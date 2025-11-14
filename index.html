@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERIA - Voitures de Luxe Futuristes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Écran de chargement -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="cyberia-logo">
+                <span class="letter" data-letter="C">C</span>
+                <span class="letter" data-letter="Y">Y</span>
+                <span class="letter" data-letter="B">B</span>
+                <span class="letter" data-letter="E">E</span>
+                <span class="letter" data-letter="R">R</span>
+                <span class="letter" data-letter="I">I</span>
+                <span class="letter" data-letter="A">A</span>
+            </div>
+            <div class="loading-tagline">PERSONNALISATION AUTOMOBILE DE LUXE</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="loading-particle"></div>
+            <div class="loading-particle"></div>
+            <div class="loading-particle"></div>
+            <div class="loading-particle"></div>
+            <div class="loading-particle"></div>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="main-content" class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <i class="fas fa-bolt"></i>
+                    CYBERIA
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Accueil</a></li>
+                    <li><a href="#collection" class="nav-link">Collection</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="futuristic-particles"></div>
+            <div class="holographic-grid"></div>
+            <div class="energy-waves"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="main-title">CYBERIA</span>
+                <span class="subtitle">AUTOMOTIVE EXCELLENCE</span>
+            </h1>
+            <p class="hero-description">
+                Découvrez l'art de la personnalisation automobile haut de gamme.
+                Chaque véhicule est une œuvre unique, alliant performance et raffinement.
+            </p>
+            <div class="hero-buttons">
+                <a href="#collection" class="btn btn-primary">
+                    Découvrir la Collection
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Nous Contacter
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cyberia Luxury Car">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Véhicules Vendus</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Marques Partenaires</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Satisfaction Client</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-text">Collection Exclusive</span>
+                </h2>
+                <p class="section-subtitle">Véhicules d'exception customisés par nos experts</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="supercars">Supercars</button>
+                <button class="filter-btn" data-filter="luxury">Luxe</button>
+                <button class="filter-btn" data-filter="electric">Électriques</button>
+                <button class="filter-btn" data-filter="limited">Édition Limitée</button>
+            </div>
+
+            <!-- Cars Grid -->
+            <div class="cars-grid">
+                <div class="car-card" data-category="supercars">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Lamborghini Cyberia Edition">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Bugatti Chiron</h3>
+                                <p>Cyberia Edition</p>
+                                <div class="price">€299,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-tachometer-alt"></i> 1500 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 2.4s (0-100)</span>
+                            <span class="spec"><i class="fas fa-road"></i> 420 km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Rolls Royce Cyberia">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Range Rover</h3>
+                                <p>Cyberia Signature</p>
+                                <div class="price">€450,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-tachometer-alt"></i> 525 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 4.5s (0-100)</span>
+                            <span class="spec"><i class="fas fa-road"></i> 250 km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="electric">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tesla Cyberia">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Tesla Roadster</h3>
+                                <p>Cyberia Electric</p>
+                                <div class="price">€185,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-bolt"></i> 1020 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 1.9s (0-100)</span>
+                            <span class="spec"><i class="fas fa-battery-full"></i> 628 km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="supercars">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Ferrari Cyberia">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Ferrari F8 Tributo</h3>
+                                <p>Cyberia Performance</p>
+                                <div class="price">€520,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-tachometer-alt"></i> 720 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 2.9s (0-100)</span>
+                            <span class="spec"><i class="fas fa-road"></i> 340 km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="limited">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Chevrolet Camaro Cyberia">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Chevrolet Camaro ZL1</h3>
+                                <p>Cyberia Muscle</p>
+                                <div class="price">€380,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-tachometer-alt"></i> 650 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 3.5s (0-100)</span>
+                            <span class="spec"><i class="fas fa-road"></i> 290 km/h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Audi Cyberia">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>Audi R8 V10</h3>
+                                <p>Cyberia Performance</p>
+                                <div class="price">€285,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-specs">
+                            <span class="spec"><i class="fas fa-tachometer-alt"></i> 620 CH</span>
+                            <span class="spec"><i class="fas fa-clock"></i> 3.2s (0-100)</span>
+                            <span class="spec"><i class="fas fa-road"></i> 330 km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-text">Nos Services</span>
+                </h2>
+                <p class="section-subtitle">Excellence et innovation dans chaque détail</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customisation</h3>
+                    <p>Design sur-mesure avec nos équipes d'experts. Transformez votre vision en réalité avec des modifications uniques.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimisation moteur et châssis pour des performances exceptionnelles. Technologie de pointe et innovation constante.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantie</h3>
+                    <p>Garantie étendue et service après-vente premium. Votre investissement protégé par nos experts techniques.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Livraison</h3>
+                    <p>Livraison sécurisée dans le monde entier. Transport spécialisé pour véhicules d'exception.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Entretien premium par des techniciens certifiés. Préservez l'excellence de votre véhicule.</p>
+                    </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Accompagnement personnalisé dans votre choix. Expertise et passion au service de vos besoins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="cyber-text">L'Excellence Cyberia</span>
+                    </h2>
+                    <p>Depuis plus d'une décennie, Cyberia s'impose comme référence mondiale dans la personnalisation automobile de luxe. Notre expertise unique transforme les véhicules d'exception en créations sur-mesure d'une beauté saisissante.</p>
+                    <p>Fondée en 2022 par <strong>Olivier Fabre</strong> et dirigée aux côtés de <strong>Miky Saintellier</strong>, co-directeur, notre entreprise regroupe les meilleurs artisans et ingénieurs automobile. Inspirés par l'excellence de maisons comme Mansory, nous repoussons les limites du possible. Chaque projet reflète notre obsession du détail et notre maîtrise technique absolue, créant des automobiles qui redéfinissent l'art du raffinement.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Excellence Certifiée</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Livraison Mondiale</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Équipe d'Experts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="cyber-frame">
+                        <div class="frame-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="cyber-text">Contactez-Nous</span>
+                </h2>
+                <p class="section-subtitle">Démarrez votre projet automobile d'exception</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>25 Avenue des Champs-Élysées<br>75008 Paris</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@cyberia-automobile.fr</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom Complet</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Téléphone</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="achat">Achat de véhicule</option>
+                            <option value="customisation">Customisation</option>
+                            <option value="vente">Vente de véhicule</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <label for="service">Service souhaité</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        CYBERIA
+                    </div>
+                    <p>L'avenir de l'automobile de luxe commence ici. Innovation, performance et excellence dans chaque détail.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Customisation</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Garantie</a></li>
+                        <li><a href="#">Livraison</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> contact@cyberia-automobile.fr</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Cyberia. Tous droits réservés.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#mentions">Mentions Légales</a>
+                    <a href="#privacy">Politique de Confidentialité</a>
+                    <a href="#cgv">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals détaillées pour chaque voiture -->
+    <!-- Modal Lamborghini Huracán -->
+    <div id="car-modal-huracan" class="car-details-modal">
+        <div class="car-details-content">
+            <div class="car-details-header">
+                <h2>Lamborghini Huracán - Cyberia Edition</h2>
+                <button class="close-car-modal" onclick="closeCarModal()">&times;</button>
+            </div>
+            <div class="car-details-body">
+                <div class="car-details-image">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Lamborghini Huracán Cyberia">
+                </div>
+                <div class="car-specs-section">
+                    <div class="specs-category">
+                        <h3><i class="fas fa-cog"></i> Moteur & Performance</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Moteur</span>
+                                <span class="spec-value">V10 5.2L Aspiré</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Puissance</span>
+                                <span class="spec-value">640 CH</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Couple</span>
+                                <span class="spec-value">600 Nm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">0-100 km/h</span>
+                                <span class="spec-value">3.2 sec</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Vitesse max</span>
+                                <span class="spec-value">325 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Transmission</span>
+                                <span class="spec-value">7G-DCT AWD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="specs-category">
+                        <h3><i class="fas fa-palette"></i> Modifications Cyberia</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Kit Carrosserie</span>
+                                <span class="spec-value">Widebody Carbon</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Échappement</span>
+                                <span class="spec-value">Akrapovič Titanium</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Jantes</span>
+                                <span class="spec-value">Forgées 20" / 21"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Freinage</span>
+                                <span class="spec-value">Brembo Carbon-Ceramic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Intérieur</span>
+                                <span class="spec-value">Alcantara Premium</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Peinture</span>
+                                <span class="spec-value">Cyber Gold Métallisé</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-highlights">
+                        <h4>Performances Cyberia</h4>
+                        <div class="performance-stats">
+                            <div class="performance-stat">
+                                <div class="stat-number">640</div>
+                                <div class="stat-label">Chevaux</div>
+                            </div>
+                            <div class="performance-stat">
+                                <div class="stat-number">3.2</div>
+                                <div class="stat-label">0-100 km/h</div>
+                            </div>
+                            <div class="performance-stat">
+                                <div class="stat-number">325</div>
+                                <div class="stat-label">km/h max</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ferrari F8 Tributo -->
+    <div id="car-modal-ferrari" class="car-details-modal">
+        <div class="car-details-content">
+            <div class="car-details-header">
+                <h2>Ferrari F8 Tributo - Cyberia Masterpiece</h2>
+                <button class="close-car-modal" onclick="closeCarModal()">&times;</button>
+            </div>
+            <div class="car-details-body">
+                <div class="car-details-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Ferrari F8 Tributo Cyberia">
+                </div>
+                <div class="car-specs-section">
+                    <div class="specs-category">
+                        <h3><i class="fas fa-cog"></i> Moteur & Performance</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Moteur</span>
+                                <span class="spec-value">V8 3.9L BiTurbo</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Puissance</span>
+                                <span class="spec-value">720 CH</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Couple</span>
+                                <span class="spec-value">770 Nm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">0-100 km/h</span>
+                                <span class="spec-value">2.9 sec</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Vitesse max</span>
+                                <span class="spec-value">340 km/h</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Transmission</span>
+                                <span class="spec-value">7G-DCT RWD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="specs-category">
+                        <h3><i class="fas fa-palette"></i> Modifications Cyberia</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Aérodynamique</span>
+                                <span class="spec-value">Kit Mansory Inspired</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Échappement</span>
+                                <span class="spec-value">Capristo Valved</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Jantes</span>
+                                <span class="spec-value">HRE P101SC 20"/21"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Suspension</span>
+                                <span class="spec-value">Öhlins Road & Track</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Intérieur</span>
+                                <span class="spec-value">Cuir Nappa Personnalisé</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Carbone</span>
+                                <span class="spec-value">Visible Mat/Brillant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> <!-- Fin du contenu principal -->
+
+    <!-- Mentions Légales Modal -->
+    <div id="mentions-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mentions Légales</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Informations sur l'entreprise</h3>
+                <p><strong>Raison sociale :</strong> Cyberia Automobile SARL</p>
+                <p><strong>Forme juridique :</strong> Société à Responsabilité Limitée</p>
+                <p><strong>Capital social :</strong> 500 000 €</p>
+                <p><strong>Siège social :</strong> 25 Avenue des Champs-Élysées, 75008 Paris</p>
+                
+                <h3>Direction</h3>
+                <p><strong>Fondateur et Président :</strong> Olivier Fabre</p>
+                <p><strong>Co-directeur :</strong> Miky Saintellier</p>
+                
+                <h3>Contact</h3>
+                <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+                <p><strong>Email :</strong> contact@cyberia-automobile.fr</p>
+                
+                <h3>Propriété intellectuelle</h3>
+                <p>L'ensemble du contenu de ce site (textes, images, vidéos) est protégé par le droit d'auteur. 
+                Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
+                
+                <h3>Responsabilité</h3>
+                <p>Les informations contenues sur ce site sont données à titre indicatif et peuvent être modifiées à tout moment. 
+                Cyberia Automotive ne saurait être tenue responsable des dommages directs ou indirects 
+                causés au matériel de l'utilisateur lors de l'accès au site.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
